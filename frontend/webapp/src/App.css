@@ -1,0 +1,122 @@
+:root {
+  --primary: #004a99;
+  --accent: #cd2026;
+  --bg: #f4f7ff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+.status-bar {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  z-index: 11000;
+  font-size: 14px;
+}
+
+.status-bar.on {
+  background: #2ecc71;
+  box-shadow: 0 0 10px #2ecc71;
+}
+
+.status-bar.off {
+  background: #e74c3c;
+  box-shadow: 0 0 10px #e74c3c;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  background: rgba(0, 74, 153, 0.25);
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.brand span {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.nav-items button {
+  border: 2px solid #d6dff5;
+  background: #eef2ff;
+  margin-left: 12px;
+  padding: 10px 25px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.nav-items button:hover {
+  background: #dfe8ff;
+}
+
+.nav-items button.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.page {
+  padding: 25px;
+}
+
+.content {
+  padding: 35px;
+}
+
+.data-row {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-box {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  margin: 18px auto;
+  width: 85%;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.07);
+}
+
+.spacer {
+  height: 800px;
+  background: linear-gradient(white, #ebf3ff);
+}
